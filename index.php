@@ -12,6 +12,10 @@
         <link rel="icon" href="img/icon.jpg" />
 
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" media="screen and (max-width: 1100px)" href="css/bigscreen.css" type="text/css">
+        <link rel="stylesheet" media="screen and (max-width: 800px)" href="css/smallscreen.css" type="text/css">
+
+
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
         <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
@@ -25,18 +29,21 @@
 
 
     <body>
-
         <img src="img/burger.png" class="burger" alt="">
+        <div class="test">
 
-        <div id="menu" class="fixed">
-            <ul>
 
-                <li><a href="#texte" id="accueil_menu">ACCUEIL</a></li>
-                <li><a href="#propos" id="propos_menu">À PROPOS</a></li>
-                <li><a href="#infos_perso" id="presentation_menu">PRÉSENTATION</a></li>
-                <li><a href="#competences" id="competences_menu">COMPÉTENCES</a></li>
-                <li><a href="#contact" id="contact_menu">CONTACT</a></li>
-            </ul>
+
+            <div id="menu" class="fixed">
+                <ul>
+
+                    <li><a href="#texte" id="accueil_menu">ACCUEIL</a></li>
+                    <li><a href="#propos" id="propos_menu">À PROPOS</a></li>
+                    <li><a href="#infos_perso" id="presentation_menu">PRÉSENTATION</a></li>
+                    <li><a href="#competences" id="competences_menu">COMPÉTENCES</a></li>
+                    <li><a href="#contact" id="contact_menu">CONTACT</a></li>
+                </ul>
+            </div>
         </div>
         <header>
             <div id="texte">
@@ -61,11 +68,16 @@
         <div id="propos">
             <h1 class="titre">Quelques mots sur moi ...</h1>
             <div id="contenu">
-                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque neque dolorem nihil, hic expedita, est dolor possimus quasi praesentium esse officia recusandae, fugiat aliquid quos ipsa nostrum nulla perspiciatis numquam!</span>
-                    <span>Eum tempora eligendi autem quibusdam adipisci incidunt doloribus, magnam aspernatur perspiciatis sunt, cumque alias maxime ab at in aliquid. Dolorum, quam nesciunt. Minima, dignissimos amet, repellendus suscipit officiis libero esse.</span>
-                    <span>Illum natus, quis. Voluptatem distinctio hic porro rerum nostrum eaque tempora, itaque suscipit aut pariatur quia incidunt. Ipsum odio, consequatur perferendis fuga dolorum perspiciatis nisi architecto vero soluta reprehenderit. Quos.</span>
-                    <span>Odit fuga ipsam qui vitae hic quam odio quasi autem. Architecto quo, distinctio totam dolor a ab. Ab veritatis animi aliquam, quidem amet, quia alias laboriosam eos soluta quaerat debitis!</span>
-                    <span>Reprehenderit ipsam, esse non. Aspernatur necessitatibus molestiae voluptatum blanditiis voluptas. Repellat porro dolores natus odio ducimus nostrum non eaque dicta, soluta assumenda blanditiis vitae pariatur, dolorum quos, delectus iusto impedit.</span></p>
+                <div class="photo_profil">
+                    <img src="img/profil2.jpg" alt="">
+                </div>
+                <p><span>Jeune diplômé d’un DUT informatique (bac+2) je souhaite maintenant me diriger vers le développement front-end qui est vraiment ce qui me plaît le plus dans le développement web.</span>
+
+                    <span>Depuis tout petit je suis intéressé par l’informatique ce qui m’a permis d’acquérir pas mal d’expérience dans le milieu et de pouvoir connaitre facilement toutes les nouveautés des langages de programmation.</span>
+
+                    <span>Mon domaine de prédilection est donc le développement front-end (HTML/CSS/JS) mais j’ai aussi acquis grâce à mes études en informatique, des compétences dans le back-end (PHP/MYSQL)</span>
+
+                </p>
             </div>
         </div>
 
@@ -117,13 +129,7 @@
                             <p><span>2011</span>Stage 3ème au sein de l'entreprise 2mrc-information à Alincthun</p>
                         </div>
                     </li>
-                    <li>
-                        <div class="gauche">
-                            <p>
-                                <span>2010</span>Test
-                            </p>
-                        </div>
-                    </li>
+
 
 
                 </ul>

@@ -1,0 +1,11 @@
+@media screen and (max-width: 800px) {
+  .timeline ul li {
+    margin-left: 40px !important; }
+    .timeline ul li div {
+      width: calc(100vw - 200px) !important; }
+    .timeline ul li .gauche {
+      left: 35px !important; }
+      .timeline ul li .gauche::before {
+        left: -15px; }
+  .titre {
+    font-size: 7vw !important; } }
