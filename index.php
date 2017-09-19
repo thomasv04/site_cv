@@ -9,7 +9,7 @@
         <meta charset="utf-8">
         <title>Vigneron Thomas</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-        <link rel="icon" href="img/icon.jpg" />
+        <link rel="icon" href="img/favicon.png" />
 
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" media="screen and (max-width: 1100px)" href="css/bigscreen.css" type="text/css">
@@ -55,7 +55,7 @@
                     <span class="c5">A</span>
                     <span class="c6">S</span>
                 </h1>
-                <h2>ÉTUDIANT EN INFORMATIQUE</h2>
+                <h2>DÉVELOPPEUR FRONT-END / INTÉGRATEUR WEB</h2>
             </div>
 
 

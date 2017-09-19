@@ -26,6 +26,7 @@ h1 {
     background: linear-gradient(to right, #F69332, #F26F54, #EE4D7A, #A066A9, #4F72B7, #0B97AC, #00B199);
 }
 
+
 #menu {
     margin: auto;
     text-align: center;
@@ -154,11 +155,11 @@ header {
                 -webkit-border-radius:50%;
                 -moz-border-radius:50%;
                 border-radius:50%;
-                width:20%;
-                height:auto;
+                width:20vh;
+                height:20vh;
                 box-shadow: 4px 4px 10px #343434;
                 margin-right: 20px;
-                margin-bottom: 20px;;
+                margin-bottom: 20px;
             }
         }
         p span{

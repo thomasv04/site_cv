@@ -197,8 +197,8 @@ header {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  width: 20%;
-  height: auto;
+  width: 20vh;
+  height: 20vh;
   -webkit-box-shadow: 4px 4px 10px #343434;
   box-shadow: 4px 4px 10px #343434;
   margin-right: 20px;
