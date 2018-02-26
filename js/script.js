@@ -1,86 +1,193 @@
 
 $(document).ready(function() {
 
-    /* Quand je clique sur l'icône hamburger je rajoute une classe au body */
-    $(".burger").click(function(){
-        if($('#menu').hasClass("show")){
-            $('#menu').removeClass("show");
-        }else{
-            $('#menu').addClass("show");
+
+    $(".trait_gauche").click(function(){
+
+        if(!$('.trait_gauche').hasClass("extend_left"))
+        {
+            $('.trait_gauche').addClass("extend_left");
+        }
+
+        if(!$('.page_gauche').hasClass("enable")){
+
+            $('.page_gauche').removeClass("disable");
+            $('.page_gauche').addClass("enable");
+
+        }
+
+        if(!$('.retour img').hasClass("enable")){
+
+            $('.retour img').addClass("enable");
+
+        }
+    });
+
+    $(".trait_haut").click(function(){
+        if(!$('.trait_haut').hasClass("extend_haut"))
+        {
+            $('.trait_haut').addClass("extend_haut");
+        }
+
+        if(!$('.page_haut').hasClass("enable")){
+
+            $('.page_haut').removeClass("disable");
+            $('.page_haut').addClass("enable");
+
+        }
+
+        if(!$('.retour img').hasClass("enable")){
+
+            $('.retour img').addClass("enable");
+
+        }
+    });
+
+    $(".trait_bas").click(function(){
+        if(!$('.trait_bas').hasClass("extend_bas"))
+        {
+            $('.trait_bas').addClass("extend_bas");
+        }
+
+        if(!$('.page_bas').hasClass("enable")){
+
+            $('.page_bas').removeClass("disable");
+            $('.page_bas').addClass("enable");
+
+        }
+
+        if(!$('.retour img').hasClass("enable")){
+
+            $('.retour img').addClass("enable");
+
+        }
+    });
+
+    $(".trait_droit").click(function(){
+        if(!$('.trait_droit').hasClass("extend_droit"))
+        {
+            $('.trait_droit').addClass("extend_droit");
+        }
+
+        if(!$('.page_droite').hasClass("enable")){
+
+            $('.page_droite').removeClass("disable");
+            $('.page_droite').addClass("enable");
+
+        }
+
+        if(!$('.retour img').hasClass("enable")){
+
+            $('.retour img').addClass("enable");
+
+        }
+    });
+
+    $(".retour").click(function(){
+
+        if($('.trait_gauche').hasClass("extend_left")){
+            $('.trait_gauche').removeClass("extend_left");
+        }
+
+        if($('.trait_haut').hasClass("extend_haut")){
+            $('.trait_haut').removeClass("extend_haut");
+        }
+
+        if($('.trait_bas').hasClass("extend_bas")){
+            $('.trait_bas').removeClass("extend_bas");
+        }
+
+        if($('.trait_droit').hasClass("extend_droit")){
+            $('.trait_droit').removeClass("extend_droit");
+        }
+
+        if($('.page_gauche').hasClass("enable")){
+
+            $('.page_gauche').removeClass("enable");
+            $('.page_gauche').addClass("disable");
+        }
+
+        if($('.page_haut').hasClass("enable")){
+
+            $('.page_haut').removeClass("enable");
+            $('.page_haut').addClass("disable");
+        }
+
+        if($('.page_bas').hasClass("enable")){
+
+            $('.page_bas').removeClass("enable");
+            $('.page_bas').addClass("disable");
+        }
+
+        if($('.page_droite').hasClass("enable")){
+
+            $('.page_droite').removeClass("enable");
+            $('.page_droite').addClass("disable");
+        }
+
+
+        if($('.retour img').hasClass("enable"))
+        {
+
+            $('.retour img').removeClass("enable");
+
+        }
+
+
+
+    });
+
+    $(".ajouter").click(function(){
+
+        if(!$('.nouveau_contenu').hasClass("apparaitre"))
+        {
+            $('.nouveau_contenu').addClass("apparaitre");
+        }
+
+        if(!$('.ajouter').hasClass("disparaitre"))
+        {
+            $('.ajouter').addClass("disparaitre");
         }
 
     });
 
-    $("#menu").click(function(){
+    $(".nouveau_croix").click(function(){
 
-        $('#menu').removeClass("show");
-
-
-    });
-
-
-
-
-
-
-
-    $('body').append('<div id="returnOnTop" title="Retour en haut">&nbsp;</div>');
-
-    // On button click, let's scroll up to top
-    $('#returnOnTop').click( function() {
-        $('html,body').animate({scrollTop: 0}, 'slow');
-    });
-
-
-
-    var position_top_raccourci = $('#menu').offset().top;
-    var position_top_comp = $('#competences').offset().top;
-    var position_top_acc = $('header').offset().top;
-    var position_top_pers = $('#infos_perso').offset().top;
-    var position_top_con = $('#contact').offset().top;
-    var position_top_propos = $('#propos').offset().top;
-    var test = position_top_acc + 50 ;
-
-
-
-    $(window).scroll(function () {
-
-
-        if ( $(window).scrollTop() < position_top_propos )
-            $('#returnOnTop').fadeOut();
-        else
-            $('#returnOnTop').fadeIn();
-
-
-
-
-
-
-    });
-
-    function isElementInViewport(el) {
-        var rect = el.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
-
-    var items = document.querySelectorAll(".timeline li");
-
-
-    function callbackFunc() {
-        for (var i = 0; i < items.length; i++) {
-            if (isElementInViewport(items[i])) {
-                items[i].classList.add("in-view");
-            }
+        if($('.nouveau_contenu').hasClass("apparaitre"))
+        {
+           $('.nouveau_contenu').removeClass("apparaitre");
         }
-    }
 
-    window.addEventListener("load", callbackFunc);
-    window.addEventListener("scroll", callbackFunc);
+        if($('.ajouter').hasClass("disparaitre"))
+        {
+            $('.ajouter').removeClass("disparaitre");
+        }
+
+    });
+
+    $(".croix").click(function(){
+
+        if(!$('.alerte_supp').hasClass("apparaitre"))
+        {
+            $('.alerte_supp').addClass("apparaitre");
+        }
+    });
+
+    $(".non").click(function(){
+
+        if($('.alerte_supp').hasClass("apparaitre"))
+        {
+            $('.alerte_supp').removeClass("apparaitre");
+        }
+    });
+
+
+
+
+
+
+
+
 
 });
 
