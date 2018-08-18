@@ -1,0 +1,70 @@
+body{
+    background : #3b3b3b;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contour{
+    height: calc(3508px/3);
+    width: calc(2480px/3);
+    background: #67c2af;
+    margin:auto;
+    display: flex;
+}
+
+.contenu{
+    display: block;
+    margin: auto;
+    width: 95%;
+    height: 96%;
+    background: white;
+}
+
+.contenu h1{
+    display: block;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 25px;
+    margin:0;
+    padding-top:40px;
+    
+}
+
+.contenu h2{
+    display: block;
+    text-transform: capitalize;
+    font-weight: 100;
+    font-size: 13px;
+    color: #d84849;
+    margin:0;
+    padding:0;
+    
+    
+}
+
+.contenu img{
+    width: 110px;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+.contenu .gauche{
+    width: 20%;
+}
+
+.contenu .droite{
+    width: 70%;
+    
+}
+
+.contenu table td:first-child{
+    
+}
+
+.contenu table{
+    width: 100%;
+}
+
+
+
+
+
